@@ -62,8 +62,8 @@ require 'ooxml_encryption'
 
 decryptor      = OoxmlEncryption.new
 decrypted_data = decryptor.decrypt(
-  encrypted_spreadsheeet_data: encrypted_data,
-  password:                    password
+  encrypted_spreadsheet_data: encrypted_data,
+  password:                   password
 )
 ```
 

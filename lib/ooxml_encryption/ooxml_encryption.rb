@@ -299,15 +299,15 @@ class OoxmlEncryption
   # underlying CFB file format used to store the data is not streamable itself;
   # see the SimpleCFB gem for details.
   #
-  # +encrypted_spreadsheeet_data+:: Encrypted OOXML input data as an ASCII-8BIT
+  # +encrypted_spreadsheet_data+:: Encrypted OOXML input data as an ASCII-8BIT
   #                                 encoded string.
   #
   # +password+::                    Password for decryption in your choice of
   #                                 string encoding.
   #
-  def decrypt(encrypted_spreadsheeet_data:, password:)
+  def decrypt(encrypted_spreadsheet_data:, password:)
     cfb = SimpleCfb.new
-    cfb.parse!(StringIO.new(encrypted_spreadsheeet_data))
+    cfb.parse!(StringIO.new(encrypted_spreadsheet_data))
 
     encryption_info_xml        = cfb.file_index.find { |f| f.name == 'EncryptionInfo'   }&.content
     encrypted_spreadsheet_data = cfb.file_index.find { |f| f.name == 'EncryptedPackage' }&.content

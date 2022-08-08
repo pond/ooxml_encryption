@@ -29,8 +29,8 @@ RSpec.describe OoxmlEncryption do
 
       encryptor = described_class.new
       decrypted = encryptor.decrypt(
-        encrypted_spreadsheeet_data: input_enc_xlsx,
-        password:                    'secret'
+        encrypted_spreadsheet_data: input_enc_xlsx,
+        password:                   'secret'
       )
 
       expect(decrypted).to match(node_unenc_output)
