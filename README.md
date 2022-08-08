@@ -1,4 +1,8 @@
 # OOXML Encryption
+
+[![License](https://img.shields.io/badge/license-mit-blue)](https://opensource.org/licenses/MIT)
+[![Build Status](https://github.com/RIPAGlobal/ooxml_encryption/actions/workflows/ruby.yml/badge.svg)](https://github.com/RIPAGlobal/ooxml_encryption/actions)
+
 ## Overview
 
 OOXML Encryption provides encryption and decryption support for OOXML (Microsoft Excel / `.xlsx` files) via full-spreadsheet password protection using AES encryption with SHA-512 hashes. This is a port of the encryption part of:
