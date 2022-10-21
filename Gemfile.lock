@@ -51,7 +51,9 @@ GEM
       nokogiri (>= 1.5.9)
     method_source (1.0.0)
     minitest (5.16.2)
-    nokogiri (1.13.8-x86_64-darwin)
+    nokogiri (1.13.9-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
     openssl (3.0.0)
     psych (4.0.4)
@@ -110,6 +112,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   byebug (~> 11.1)
