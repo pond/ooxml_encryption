@@ -5,11 +5,11 @@ class OoxmlEncryption
   # Gem version. If this changes, be sure to re-run "bundle install" or
   # "bundle update".
   #
-  VERSION = '0.2.0'
+  VERSION = '0.3.0'
 
   # Date for VERSION. If this changes, be sure to re-run "bundle install"
   # or "bundle update".
   #
-  DATE = '2023-01-16'
+  DATE = '2024-10-22'
 
 end
