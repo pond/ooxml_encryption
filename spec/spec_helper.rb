@@ -14,7 +14,7 @@ ENV['RACK_ENV'] = 'test'
 require 'simplecov'
 SimpleCov.start()
 
-require 'byebug'
+require 'debug'
 require 'ooxml_encryption'
 
 # ============================================================================
